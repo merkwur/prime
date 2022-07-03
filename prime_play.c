@@ -2,9 +2,9 @@
 #include <math.h>
 
 int is_prime(int n) {
-	int a, i, flag;
+	int a, i;
  	
-	a	= floor(sqrt(n)) + 1;
+	a = floor(sqrt(n)) + 1;
 
 	for (i = 2; i < a; i++){
 		if (n % i == 0){
@@ -13,7 +13,6 @@ int is_prime(int n) {
 		}
 	}
     return 1;
-
 }
 
 int main(){
