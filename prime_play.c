@@ -21,14 +21,18 @@ int main(){
 	k = 1000;
 	mod = 12;
 
+	unsigned char diff[k];
+
 	for (j = 1; j < k; j++) {
 		x = mod * j;
 		c = x;
 		while (is_prime(c) == 0) {
 			c++;
 		}
-		printf("%d\n", (c-x));
+		diff[k] = (c-x);
+		printf("%d\n", diff[k]);
 	}
+	
 	return 0;
 }
 
