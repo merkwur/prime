@@ -21,7 +21,7 @@ int main(){
 	k = 1000;
 	mod = 12;
 
-	unsigned char diff[k];
+	int diff[k];
 
 	for (j = 1; j < k; j++) {
 		x = mod * j;
@@ -29,10 +29,9 @@ int main(){
 		while (is_prime(c) == 0) {
 			c++;
 		}
-		diff[k] = (c-x);
-		printf("%d\n", diff[k]);
+		diff[j] = (c-x);
+		printf("%u\n", diff[j]);
 	}
-	
 	return 0;
 }
 
