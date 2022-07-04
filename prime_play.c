@@ -3,13 +3,11 @@
 
 int is_prime(int n) {
 	int a, i;
- 	
 	a = floor(sqrt(n)) + 1;
 
 	for (i = 2; i < a; i++){
 		if (n % i == 0){
-            return 0;
-
+        	return 0;
 		}
 	}
     return 1;
